@@ -88,17 +88,17 @@
  }
 
  /* Center Video Container */
- .featured-video-wrapper {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     width: 100%;
-     max-width: 700px;
-     z-index: 5;
-     opacity: 1;
-     transition: all 0.3s ease-out;
- }
+.featured-video-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 875px;
+    z-index: 5;
+    opacity: 1;
+    transition: all 0.3s ease-out;
+}
 
  .featured-video-wrapper video {
      width: 100%;
