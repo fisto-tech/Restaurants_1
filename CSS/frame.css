@@ -1,0 +1,93 @@
+.frame-content {
+    margin: 2%;
+    position: relative;
+}
+
+.frame-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.frame-img img {
+    width: 80%;
+    height: auto;
+}
+
+.frame-btn {
+    position: absolute;
+    left: 43%;
+    top: 65%;
+}
+
+.frame-btn button {
+    color: white;
+    background: rgb(174, 51, 51);
+    padding: 15px 15px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 884px) {
+    .frame-btn {
+        position: absolute;
+        left: 38%;
+        top: 62%;
+    }
+}
+
+@media (max-width: 768px) {
+    .frame-btn {
+        position: absolute;
+        left: 38%;
+        top: 63%;
+    }
+
+    .frame-btn button {
+        color: white;
+        background: rgb(174, 51, 51);
+        padding: 15px 15px;
+        border-radius: 50px;
+        border: 0;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 428px) {
+    .frame-btn {
+        position: absolute;
+        left: 32%;
+        top: 80%;
+    }
+
+    .frame-btn button {
+        color: white;
+        background: rgb(174, 51, 51);
+        padding: 10px 15px;
+        border-radius: 50px;
+        border: 0;
+        cursor: pointer;
+        font-size:.8rem;
+    }
+}
+
+/* @media (max-width: 360px) {
+    .frame-btn {
+        position: absolute;
+        left: 40%;
+        top: 60%;
+    }
+
+    .frame-btn button {
+        color: white;
+        background: rgb(174, 51, 51);
+        padding: 5px 5px;
+        border-radius: 50px;
+        border: 0;
+        cursor: pointer;
+        font-size: .5rem;
+    }
+} */

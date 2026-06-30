@@ -1,0 +1,317 @@
+.acency-content {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.agency-heading {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.agency-main-text {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 2.5rem;
+  margin: 0 auto;
+}
+
+.agency-scrabble img {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+}
+
+/* Outer wrapper just for centering */
+.agency-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 48px 0px;
+  width: 100%;
+}
+
+
+
+/* Main responsive grid */
+.agency-bg {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Individual card */
+.agency-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1.5px 10px rgba(0, 0, 0, 0.314);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 360px;
+  transition: transform 0.3s ease;
+}
+
+.agency-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Banner (image area) */
+.agency-banner {
+  background: rgba(128, 128, 128, 0.2);
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agency-banner-p {
+  background: rgba(128, 128, 128, 0.2);
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agency-banner-p img {
+  width: 90%;
+  height: 90%;
+  object-fit: fill;
+}
+
+.agency-banner img {
+  width: 50%;
+  height: 90%;
+  object-fit: fill;
+}
+
+/* Card header */
+.agency-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 24px 15px 24px;
+}
+
+.agency-logo {
+  background: #f5f5f5;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agency-logo img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.agency-title {
+  font-size: 1.23rem;
+  font-weight: 600;
+  color: #171717;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  letter-spacing: 0.02em;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.badge {
+  font-size: 0.79rem;
+  padding: 2px 8px;
+  background: #222;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+/* Card body/info */
+.agency-info {
+  padding: 0px 24px 12px 24px;
+  font-size: .9rem;
+  color: #737373;
+  display: flex;
+  gap: 1px;
+  font-weight: 400;
+  flex-grow: 1;
+  font-family: 'Poppins', sans-serif;
+
+  /* ensures even stretch */
+}
+
+.agency-span {
+  color: #000000;
+  font-weight: 500;
+  min-width: 76px;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+/* View more link */
+.view-a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+/* Button style */
+.slide-glow {
+  background: #16a085;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 0;
+  font-size: 1rem;
+  width: 60%;
+}
+
+.slide-glow::first-letter {
+  text-transform: uppercase;
+}
+
+.slide-glow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  animation: slideGlow 2s infinite;
+}
+
+@keyframes slideGlow {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+/* --- Responsive --- */
+
+/* Tablet */
+@media (max-width: 960px) {
+  .agency-scrabble img {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+  }
+
+  .agency-card {
+    min-height: 0px;
+  }
+
+  .agency-grid {
+    padding: 32px 8px;
+  }
+
+  .agency-bg {
+    max-width: 700px;
+  }
+
+  .agency-banner {
+    height: 160px;
+  }
+
+  .btn div {
+    padding: 1vw 1.9vw;
+  }
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+  .agency-main-text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .agency-card {
+    min-height: 0px;
+  }
+
+  .agency-scrabble img {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+  }
+
+  .agency-grid {
+    padding: 16px 0;
+  }
+
+  .agency-bg {
+    max-width: 350px;
+  }
+
+  .agency-banner {
+    height: 140px;
+  }
+
+  .agency-header,
+  .agency-info {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .btn div {
+    padding: 2.5vw 4vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .agency-main-text {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .agency-card {
+    min-height: 0px;
+  }
+
+  .agency-scrabble img {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+  }
+
+  .agency-bg {
+    max-width: 250px;
+  }
+
+  .btn div {
+    padding: 3vw 6vw;
+  }
+}
