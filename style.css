@@ -73,8 +73,300 @@
       transition: opacity 0.3s;
     }
 
-    #backToTop:hover {
-      background-color: grey;
+/* Button Hover Animations & Transitions */
 
-    }
+/* Book a Demo float button hover animation */
+.button-float {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.button-float:hover {
+  transform: translateY(-5px) scale(1.08) !important;
+  background: #1ce783 !important;
+  border-color: #1ce783 !important;
+  color: #000 !important;
+  box-shadow: 0 10px 20px rgba(28, 231, 131, 0.4), 0 0 30px rgba(28, 231, 131, 0.2) !important;
+  animation: none !important;
+}
+
+/* Action Button Primary Hover animation (Shimmer effect) */
+.action-button-primary {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.action-button-primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-25deg);
+  transition: 0.75s;
+}
+
+.action-button-primary:hover::after {
+  left: 120%;
+}
+
+.action-button-primary:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(255, 60, 0, 0.6);
+  background: #ff5520;
+}
+
+/* Back to Top button hover */
+#backToTop {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+#backToTop:hover {
+  background-color: #1ce783 !important;
+  color: #000 !important;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(28, 231, 131, 0.4);
+}
+
+/* View More / Slide Glow button hover */
+.slide-glow {
+  transition: all 0.3s ease;
+}
+.slide-glow:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(22, 160, 133, 0.4);
+  background: #1abc9c !important;
+  cursor: pointer;
+}
+
+
+/* ==========================================================================
+   BOOK A DEMO MODAL CSS (GLASSMORPHISM)
+   ========================================================================== */
+.demo-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.demo-modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.demo-modal-content {
+  background: rgba(18, 18, 18, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 40px;
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  transform: scale(0.85);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.demo-modal-overlay.active .demo-modal-content {
+  transform: scale(1);
+}
+
+/* Close Button */
+.modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2.2rem;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  line-height: 1;
+}
+
+.modal-close-btn:hover {
+  opacity: 1;
+  transform: rotate(90deg);
+  color: #1ce783;
+}
+
+.modal-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.modal-header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.modal-header p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Form Styles */
+#modalContactForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#modalContactForm .form-group {
+  position: relative;
+}
+
+#modalContactForm .form-group.full-row {
+  grid-column: span 2;
+}
+
+#modalContactForm .form-group input,
+#modalContactForm .form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+#modalContactForm .form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+#modalContactForm .form-group input:focus,
+#modalContactForm .form-group textarea:focus {
+  border-color: #1ce783;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 10px rgba(28, 231, 131, 0.2);
+}
+
+#modalContactForm .form-group label {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+#modalContactForm .form-group textarea ~ label {
+  top: 24px;
+  transform: none;
+}
+
+/* Floating labels */
+#modalContactForm .form-group input:focus ~ label,
+#modalContactForm .form-group input:not(:placeholder-shown) ~ label {
+  top: -5px;
+  left: 12px;
+  font-size: 0.85rem;
+  color: #1ce783;
+  background: #1a1a1a;
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+#modalContactForm .form-group textarea:focus ~ label,
+#modalContactForm .form-group textarea:not(:placeholder-shown) ~ label {
+  top: -10px;
+  left: 12px;
+  font-size: 0.85rem;
+  color: #1ce783;
+  background: #1a1a1a;
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+/* Mobile input wrapper */
+.mobile-input-wrapper {
+  grid-column: span 2;
+}
+
+/* Submit Button */
+.modal-submit-btn {
+  grid-column: span 2;
+  background: #ff3c00;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 8px 25px rgba(255, 60, 0, 0.3);
+  margin-top: 10px;
+}
+
+.modal-submit-btn:hover {
+  background: #ff5520;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(255, 60, 0, 0.5);
+}
+
+/* Messages */
+.error-msg {
+  color: #ff4a4a;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  grid-column: span 2;
+  text-align: center;
+}
+
+.success-msg {
+  color: #1ce783;
+  font-size: 0.95rem;
+  margin-top: 5px;
+  grid-column: span 2;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Responsive modal */
+@media (max-width: 600px) {
+  #modalContactForm {
+    grid-template-columns: 1fr;
+  }
+  #modalContactForm .form-group {
+    grid-column: span 1 !important;
+  }
+  .demo-modal-content {
+    padding: 30px 20px;
+  }
+}
+
+
 

@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./CSS/pappers.css" />
     <link rel="stylesheet" href="./CSS/rotating.css" />
     <link rel="stylesheet" href="./CSS/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
 
     <link
       rel="stylesheet"
@@ -47,7 +48,7 @@
         <a href="./index.html" class="nav-link">Home</a>
         <a href="#our-work" class="nav-link">Our Works</a>
         <a href="https://fistoar.github.io/Profilenew/Homepage/index.html" target="_blank" class="nav-link">Portfolio</a>
-        <a href="./contactus.html" target="_blank" class="button-float"
+        <a href="javascript:void(0)" class="button-float"
           >Book a Demo</a
         >
       </div>
@@ -92,7 +93,7 @@
         <a href="./index.html" class="mobile-nav-link">Home</a>
         <a href="#our-work" class="mobile-nav-link">Our Works</a>
         <a href="https://fistoar.github.io/Profilenew/Homepage/index.html" target="_blank" class="mobile-nav-link">Portfolio</a>
-        <a href="./contactus.html" target="_blank" class="button-float"
+        <a href="javascript:void(0)" class="button-float"
           >Book a Demo</a
         >
         <div class="mobile-social-icons">
@@ -139,7 +140,7 @@
             <p>
               Savor exceptional flavors, crafted with passion and served with love.
             </p>
-            <a href="./contactus.html" class="action-button-primary"
+            <a class="action-button-primary"
               >Reserve a Table</a>
           </div>
 
@@ -1050,7 +1051,52 @@
 
     <!-- ************************************************** BACK TO TOP BUTTON END ************************************************* -->
 
-    <!-- ******************************************************* SCRIPT*********************************************** -->
+    <!-- ************************************************** BOOK A DEMO MODAL START ************************************************* -->
+    <div class="demo-modal-overlay" id="demoModal">
+      <div class="demo-modal-content">
+        <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">&times;</button>
+        <div class="modal-header">
+          <h2>Book a Demo</h2>
+          <p>Discover how our restaurant can elevate your dining experience — connect with our team today!</p>
+        </div>
+        <form id="modalContactForm" autocomplete="off">
+          <div class="form-group">
+            <input type="text" id="modal_name" name="name" required placeholder=" " />
+            <label for="modal_name">Name *</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="modal_email" name="email" required placeholder=" " />
+            <label for="modal_email">Work Email *</label>
+          </div>
+          <div class="form-group mobile-input-wrapper">
+            <input type="tel" id="modal_mobileInput" name="mobileInput" required placeholder=" " inputmode="numeric" pattern="[0-9]*" />
+            <label id="modal_mobileLabel" for="modal_mobileInput">Mobile *</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="modal_city" name="city" required placeholder=" " />
+            <label for="modal_city">City *</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="modal_companyName" name="companyName" required placeholder=" " />
+            <label for="modal_companyName">Company Name *</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="modal_industry" name="industry" required placeholder=" " />
+            <label for="modal_industry">Your Industry Type *</label>
+          </div>
+          <div class="form-group full-row">
+            <textarea id="modal_message" name="message" required placeholder=" "></textarea>
+            <label for="modal_message">Your Requirement *</label>
+          </div>
+          <div id="modal_output" class="full-row" style="display: none;"></div>
+          <button type="submit" class="modal-submit-btn">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+    <!-- ************************************************** BOOK A DEMO MODAL END ************************************************* -->
+
+    <!-- ******************************************************* SCRIPT *********************************************** -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="./JS/navbar.js"></script>
     <script src="./JS/creative.js"></script>
     <script src="./JS/productScroll.js"></script>
@@ -1058,6 +1104,7 @@
     <script src="./JS/rotating.js"></script>
     <script src="./JS/footer.js"></script>
     <script src="./JS/agency.js"></script>
+    <script src="./JS/modalContact.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

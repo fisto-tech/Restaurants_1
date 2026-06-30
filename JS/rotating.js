@@ -25,7 +25,7 @@ window.addEventListener('wheel', (e) => {
   // Stop the loop
   cancelAnimationFrame(animationId);
   // Scroll down = rotate left, scroll up = rotate right
-  currentRotation += e.deltaY * -0.2;
+  currentRotation += e.deltaY * -0.04;
   setCircleRotation();
 });
 
