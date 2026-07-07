@@ -8,6 +8,345 @@
    }
  } */
 
+/* ========== RESERVATIONS SECTION ========== */
+.reservations-section {
+  padding: 100px 0px;
+  background: #000000;
+  color: white;
+}
+
+.reservations-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.reservations-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.reservations-text {
+  margin-bottom: 50px;
+}
+
+.reservations-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.reservations-subtitle {
+  font-size: 1.1rem;
+  color: #cccccc;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.accent-line {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #ff6b35 0%, #ff5722 100%);
+  border-radius: 2px;
+}
+
+/* ========== FORM STYLES ========== */
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.form-row.single {
+  grid-template-columns: 1fr;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 14px 16px;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+/* Date & Time Input Styling */
+input[type="date"],
+input[type="time"] {
+  padding: 14px 16px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #ffffff !important;
+  border: 1px solid #333333 !important;
+}
+
+/* Calendar Icon Color */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) brightness(1.2);
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Time Icon Color */
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) brightness(1.2);
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Firefox date/time input fix */
+input[type="date"]::-moz-calendar-picker-indicator {
+  filter: invert(1) brightness(1.2);
+  cursor: pointer;
+}
+
+input[type="time"]::-moz-calendar-picker-indicator {
+  filter: invert(1) brightness(1.2);
+  cursor: pointer;
+}
+
+/* Focus state for date/time */
+input[type="date"]:focus,
+input[type="time"]:focus {
+  outline: none !important;
+  border-color: #ff6b35 !important;
+  background: rgba(255, 107, 53, 0.1) !important;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.15) !important;
+}
+
+/* Date/Time Picker Dropdown Styling (Chrome) */
+input[type="date"]::-webkit-input-type-date-and-time-value {
+  color: #ffffff;
+}
+
+/* Placeholder text color */
+input[type="date"]::placeholder,
+input[type="time"]::placeholder {
+  color: #888888;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #888888;
+}
+
+.form-group select option {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #ff6b35;
+  background: rgba(255, 107, 53, 0.08);
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.15);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ========== FORM ACTIONS ========== */
+.form-actions {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.btn-reserve {
+  padding: 16px 50px;
+  background: linear-gradient(135deg, #ff6b35 0%, #ff5722 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-reserve:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(255, 107, 53, 0.4);
+}
+
+.btn-reserve:active {
+  transform: translateY(0);
+}
+
+.form-note {
+  font-size: 0.85rem;
+  color: #999999;
+  font-weight: 300;
+}
+
+/* ========== RESERVATIONS IMAGE ========== */
+.reservations-image {
+  height: 100%;
+  min-height: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.reservations-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 968px) {
+  .reservations-wrapper {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .reservations-image {
+    min-height: 400px;
+  }
+
+  .reservations-title {
+    font-size: 2.2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .reservations-section {
+    padding: 60px 20px;
+  }
+
+  .reservations-title {
+    font-size: 1.8rem;
+  }
+
+  .reservations-subtitle {
+    font-size: 1rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 12px 14px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  .btn-reserve {
+    width: 100%;
+    padding: 14px 30px;
+  }
+}
+
+/* ========== SUCCESS MESSAGE ========== */
+.success-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, #ff6b35 0%, #ff5722 100%);
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  animation: slideInUp 0.5s ease;
+  max-width: 400px;
+  text-align: center;
+}
+
+.success-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.success-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  opacity: 0.95;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 640px) {
+  .success-message {
+    max-width: 90%;
+    padding: 30px 20px;
+  }
+
+  .success-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .success-content p {
+    font-size: 0.9rem;
+  }
+}
+ 
+
  .circle-wrapper-heading {
    display: flex;
    flex-direction: column;

@@ -1,659 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Restaurant</title>
-    <link rel="icon" type="image/png" href="./assets/images/logo.webp" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Restaurant</title>
+  <link rel="icon" type="image/png" href="./assets/images/logo.webp" />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./CSS/navbar.css" />
-    <link rel="stylesheet" href="./CSS/creative.css" />
-    <link rel="stylesheet" href="./CSS/productScroll.css" />
-    <link rel="stylesheet" href="./CSS/agency.css" />
-    <link rel="stylesheet" href="./CSS/frame.css" />
-    <link rel="stylesheet" href="./CSS/videoGrid.css" />
-    <link rel="stylesheet" href="./CSS/pappers.css" />
-    <link rel="stylesheet" href="./CSS/rotating.css" />
-    <link rel="stylesheet" href="./CSS/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./CSS/navbar.css" />
+  <link rel="stylesheet" href="./CSS/creative.css" />
+  <link rel="stylesheet" href="./CSS/productScroll.css" />
+  <link rel="stylesheet" href="./CSS/agency.css" />
+  <link rel="stylesheet" href="./CSS/frame.css" />
+  <link rel="stylesheet" href="./CSS/videoGrid.css" />
+  <link rel="stylesheet" href="./CSS/pappers.css" />
+  <link rel="stylesheet" href="./CSS/rotating.css?v=2" />
+  <link rel="stylesheet" href="./CSS/footer.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <body>
-    <!-- Preloader -->
-    <div class="preloader" id="preloader">
-      <img src="./assets/images/logo-white.webp" alt="Logo" class="preloader-logo" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <img src="./assets/images/logo-white.webp" alt="Logo" class="preloader-logo" />
+  </div>
+
+  <!-- ****************************************** NAVBAR START *********************************************** -->
+  <nav class="navbar" loading="eager">
+    <div class="navbar-left">
+      <a href="./index.html" class="nav-link">Home</a>
+      <a href="#stay" class="nav-link">Our Menu</a>
+      <a href="#testimonials" class="nav-link">Testimonials</a>
+      <a href="#new-gallery" class="nav-link">Gallery</a>
+      <a href="#reservations" class="button-float">Book a Table</a>
     </div>
+    <div class="navbar-center">
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/logo-white.webp" alt="" class="logo" />
+      </a>
+    </div>
+    <div class="navbar-right">
+      <a href="#" target="_blank" class="social"><i
+          class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank" class="social"><i
+          class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank" class="social"><i
+          class="fab fa-linkedin-in"></i></a>
+      <a href="#" target="_blank" class="social"><i class="fab fa-youtube"></i></a>
+    </div>
+    <button class="menu-toggle" aria-label="Open menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
 
-    <!-- ****************************************** NAVBAR START *********************************************** -->
-    <nav class="navbar" loading="eager">
-      <div class="navbar-left">
-        <a href="./index.html" class="nav-link">Home</a>
-        <a href="#our-work" class="nav-link">Our Works</a>
-        <a href="https://fistoar.github.io/Profilenew/Homepage/index.html" target="_blank" class="nav-link">Portfolio</a>
-        <a href="./contactus.html" target="_blank" class="button-float"
-          >Book a Demo</a
-        >
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="./index.html" class="mobile-nav-link">Home</a>
+      <a href="#stay" class="mobile-nav-link">Our Menu</a>
+      <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
+      <a href="#new-gallery" class="mobile-nav-link">Gallery</a>
+      <a href="#reservations" class="button-float">Book a Table</a>
+      <div class="mobile-social-icons">
+        <a href="#" target="_blank" class="mobile-social"><i
+            class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank" class="mobile-social"><i
+            class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank" class="mobile-social"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="#" target="_blank" class="mobile-social"><i
+            class="fab fa-youtube"></i></a>
       </div>
-      <div class="navbar-center">
-        <a href="./index.html" class="logo">
-          <img src="./assets/images/logo-white.webp" alt="" class="logo" />
-        </a>
-      </div>
-      <div class="navbar-right">
-        <a
-          href="https://www.facebook.com/profile.php?id=100084631685222"
-          target="_blank"
-          class="social"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-        <a
-          href="https://www.instagram.com/fisto_ar?igsh=OWlzNm4ydGV6b2di"
-          target="_blank"
-          class="social"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/company/82545817"
-          target="_blank"
-          class="social"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-        <a
-          href="https://www.youtube.com/@fist-oar7424"
-          target="_blank"
-          class="social"
-          ><i class="fab fa-youtube"></i
-        ></a>
-      </div>
-      <button class="menu-toggle" aria-label="Open menu">
-        <i class="fas fa-bars"></i>
-      </button>
-    </nav>
+    </div>
+  </div>
 
-    <div class="mobile-menu" id="mobileMenu">
-      <div class="mobile-menu-content">
-        <a href="./index.html" class="mobile-nav-link">Home</a>
-        <a href="#our-work" class="mobile-nav-link">Our Works</a>
-        <a href="https://fistoar.github.io/Profilenew/Homepage/index.html" target="_blank" class="mobile-nav-link">Portfolio</a>
-        <a href="./contactus.html" target="_blank" class="button-float"
-          >Book a Demo</a
-        >
-        <div class="mobile-social-icons">
-          <a
-            href="https://www.facebook.com/profile.php?id=100084631685222"
-            target="_blank"
-            class="mobile-social"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/fisto_ar?igsh=OWlzNm4ydGV6b2di"
-            target="_blank"
-            class="mobile-social"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/company/82545817"
-            target="_blank"
-            class="mobile-social"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a
-            href="https://www.youtube.com/@fist-oar7424"
-            target="_blank"
-            class="mobile-social"
-            ><i class="fab fa-youtube"></i
-          ></a>
+  <!-- ************************************************** NAVBAR END ************************************************* -->
+
+  <!-- ************************************************** CREATIVE START ************************************************* -->
+  <div class="vertical-scroll-wrapper" loading="eager">
+    <div class="sticky-hero-section">
+      <div class="main-content-area">
+        <!-- Canvas Background -->
+        <div class="dark-canvas-backdrop" id="canvasBackdrop"></div>
+
+        <!-- Hero Text -->
+        <div class="primary-hero-heading" id="heroHeadingText">
+          <h1>Delicious Food. <br /> Unforgettable <br /> Experiences.</h1>
+          <p>
+            Savor exceptional flavors, crafted with passion and served with love.
+          </p>
+          <a href="#reservations" class="action-button-primary">Reserve a Table</a>
         </div>
-      </div>
-    </div>
 
-    <!-- ************************************************** NAVBAR END ************************************************* -->
+        <!-- Center Video -->
+        <div class="featured-video-wrapper" id="mainVideoPlayer">
+          <video autoplay loop muted playsinline preload="metadata" poster="./assets/images/hero-image.webp">
+            <source src="./assets/videos/final-hero-video.mp4" type="video/mp4" />
+          </video>
+        </div>
 
-    <!-- ************************************************** CREATIVE START ************************************************* -->
-    <div class="vertical-scroll-wrapper" loading="eager">
-      <div class="sticky-hero-section">
-        <div class="main-content-area">
-          <!-- Canvas Background -->
-          <div class="dark-canvas-backdrop" id="canvasBackdrop"></div>
-
-          <!-- Hero Text -->
-          <div class="primary-hero-heading" id="heroHeadingText">
-            <h1>Delicious Food. <br /> Unforgettable <br /> Experiences.</h1>
-            <p>
-              Savor exceptional flavors, crafted with passion and served with love.
-            </p>
-            <a href="./contactus.html" class="action-button-primary"
-              >Reserve a Table</a>
+        <!-- Left Image Elements -->
+        <div class="left-side-gallery" id="leftGalleryImages">
+          <div class="gallery-image-card left-img-one">
+            <img src="./assets/images/hero-left-side/pizza.webp" alt="Pizza" />
           </div>
-
-          <!-- Center Video -->
-          <div class="featured-video-wrapper" id="mainVideoPlayer">
-            <video
-              autoplay
-              loop
-              muted
-              playsinline
-              preload="metadata"
-              poster="./assets/images/hero-image.webp"
-            >
-              <source src="./assets/videos/final-hero-video.mp4" type="video/mp4" />
-            </video>
+          <div class="gallery-image-card left-img-two">
+            <img src="./assets/images/hero-left-side/hotel-interior.webp" alt="Hotel" />
           </div>
-
-          <!-- Left Image Elements -->
-          <div class="left-side-gallery" id="leftGalleryImages">
-            <div class="gallery-image-card left-img-one">
-              <img src="./assets/images/hero-left-side/pizza.webp" alt="Pizza" />
-            </div>
-            <div class="gallery-image-card left-img-two">
-              <img src="./assets/images/hero-left-side/hotel-interior.webp" alt="Hotel" />
-            </div>
-            <div class="gallery-image-card left-img-three">
-              <img src="./assets/images/hero-left-side/fried-chicked.webp" alt="Chicken" />
-            </div>
-            <div class="gallery-image-card left-img-four">
-              <img src="./assets/images/hero-left-side/check-cooking.webp" alt="Chef Cooking" />
-            </div>
-            <div class="gallery-image-card left-img-five">
-              <img src="./assets/images/hero-left-side/kfc-image.webp" alt="KFC" />
-            </div>
+          <div class="gallery-image-card left-img-three">
+            <img src="./assets/images/hero-left-side/fried-chicked.webp" alt="Chicken" />
           </div>
-
-          <!-- Right Image Elements -->
-          <div class="right-side-gallery" id="rightGalleryImages">
-            <div class="gallery-image-card right-img-one">
-              <img src="./assets/images/hero-right-side/hotel-dining.webp" alt="Hotel dining" />
-            </div>
-            <div class="gallery-image-card right-img-two">
-              <img src="./assets/images/hero-right-side/burger.webp" alt="Burger" />
-            </div>
-            <div class="gallery-image-card right-img-three">
-              <img src="./assets/images/hero-right-side/hotel-dining-2.webp" alt="Hotel Dining" />
-            </div>
-            <div class="gallery-image-card right-img-four">
-              <img src="./assets/images/hero-right-side/mint-mojito.webp" alt="Mint Mojito" />
-            </div>
-            <div class="gallery-image-card right-img-five">
-              <img src="./assets/images/hero-right-side/chef-decorating.webp" alt="Chef Decorating" />
-            </div>
+          <div class="gallery-image-card left-img-four">
+            <img src="./assets/images/hero-left-side/check-cooking.webp" alt="Chef Cooking" />
           </div>
+          <div class="gallery-image-card left-img-five">
+            <img src="./assets/images/hero-left-side/kfc-image.webp" alt="KFC" />
+          </div>
+        </div>
 
-          <!-- Brand Marquee -->
-          <div class="brand-slider-section" id="brandMarqueeSlider" style="display: none;">
-            <div class="slider-content-track">
-              <img
-                class="brand-logo-image"
-                src="./assets/images/logo-white.webp"
-                alt="Brand"
-              />
-              <img
-                class="brand-logo-image"
-                src="./assets/Akira_logo.png"
-                alt="Brand"
-              />
-              <img
-                class="brand-logo-image"
-                src="./assets/Niagara_logo.png"
-                alt="Brand"
-              />
-              <img
-                class="brand-logo-image"
-                src="./assets/Conway_logo-white.webp"
-                alt="Brand"
-              />
-              <img
-                class="brand-logo-image"
-                src="./assets/popular_logo.png"
-                alt="Brand"
-              />
-              <img
-                class="brand-logo-image"
-                src="./assets/Airlock_Logo.gif"
-                alt="Brand"
-              />
-              <img
-                class="brand-logo-image"
-                src="./assets/TTP_Logo.png"
-                alt="Brand"
-              />
-              <img
-                class="brand-logo-image"
-                src="./assets/bestomech_white_logo.png"
-                alt="Brand"
-              />
-              <img
-                class="brand-logo-image"
-                src="./assets/images/logo-white.webp"
-                alt="Brand"
-              />
-              <img
-                class="brand-logo-image"
-                src="./assets/Akira_logo.png"
-                alt="Brand"
-              />
-              <img
-                class="brand-logo-image"
-                src="./assets/Niagara_logo.png"
-                alt="Brand"
-              />
-              <img
-                class="brand-logo-image"
-                src="./assets/Conway_logo-white.webp"
-                alt="Brand"
-              />
-            </div>
+        <!-- Right Image Elements -->
+        <div class="right-side-gallery" id="rightGalleryImages">
+          <div class="gallery-image-card right-img-one">
+            <img src="./assets/images/hero-right-side/hotel-dining.webp" alt="Hotel dining" />
+          </div>
+          <div class="gallery-image-card right-img-two">
+            <img src="./assets/images/hero-right-side/burger.webp" alt="Burger" />
+          </div>
+          <div class="gallery-image-card right-img-three">
+            <img src="./assets/images/hero-right-side/hotel-dining-2.webp" alt="Hotel Dining" />
+          </div>
+          <div class="gallery-image-card right-img-four">
+            <img src="./assets/images/hero-right-side/mint-mojito.webp" alt="Mint Mojito" />
+          </div>
+          <div class="gallery-image-card right-img-five">
+            <img src="./assets/images/hero-right-side/chef-decorating.webp" alt="Chef Decorating" />
+          </div>
+        </div>
+
+        <!-- Brand Marquee -->
+        <div class="brand-slider-section" id="brandMarqueeSlider" style="display: none;">
+          <div class="slider-content-track">
+            <img class="brand-logo-image" src="./assets/images/logo-white.webp" alt="Brand" />
+            <img class="brand-logo-image" src="./assets/Akira_logo.png" alt="Brand" />
+            <img class="brand-logo-image" src="./assets/Niagara_logo.png" alt="Brand" />
+            <img class="brand-logo-image" src="./assets/Conway_logo-white.webp" alt="Brand" />
+            <img class="brand-logo-image" src="./assets/popular_logo.png" alt="Brand" />
+            <img class="brand-logo-image" src="./assets/Airlock_Logo.gif" alt="Brand" />
+            <img class="brand-logo-image" src="./assets/TTP_Logo.png" alt="Brand" />
+            <img class="brand-logo-image" src="./assets/bestomech_white_logo.png" alt="Brand" />
+            <img class="brand-logo-image" src="./assets/images/logo-white.webp" alt="Brand" />
+            <img class="brand-logo-image" src="./assets/Akira_logo.png" alt="Brand" />
+            <img class="brand-logo-image" src="./assets/Niagara_logo.png" alt="Brand" />
+            <img class="brand-logo-image" src="./assets/Conway_logo-white.webp" alt="Brand" />
           </div>
         </div>
       </div>
     </div>
-    <!-- ************************************************** CREATIVE END ************************************************* -->
+  </div>
+  <!-- ************************************************** CREATIVE END ************************************************* -->
 
-    <!-- ************************************************** GSAP HORIZONTAL SLIDER START************************************************* -->
-    <div class="scroll-container" id="scrollContainer" loading="lazy">
-      <div class="horizontal-wrapper">
-        <section class="panel black" id="stay">
-          <div class="intro-content">
-            <span class="intro-tag">Culinary Artistry</span>
-            <h1 class="intro-heading">Discover <span class="highlight-text">handcrafted dishes</span>, <br>bold flavors, and <br>unforgettable dining experiences.</h1>
-            <div class="intro-decorative-line"></div>
+  <!-- ************************************************** GSAP HORIZONTAL SLIDER START************************************************* -->
+  <div class="scroll-container" id="scrollContainer" loading="lazy">
+    <div class="horizontal-wrapper">
+      <section class="panel black" id="stay">
+        <div class="intro-content">
+          <span class="intro-tag">Culinary Artistry</span>
+          <h1 class="intro-heading">Discover <span class="highlight-text">handcrafted dishes</span>, <br>bold flavors,
+            and <br>unforgettable dining experiences.</h1>
+          <div class="intro-decorative-line"></div>
+        </div>
+      </section>
+      <div class="horizontal-container" id="horizontalContainer">
+        <section class="panel special-offers">
+          <div class="panel-card-content">
+            <h2 class="panel-card-title">Special <span class="highlight">Offers</span></h2>
+            <p class="panel-card-sub">Delicious deals just for you.</p>
+            <a href="#" class="panel-card-link">
+              <div class="arrow-circle">
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </a>
           </div>
         </section>
-        <div class="horizontal-container" id="horizontalContainer">
-          <section class="panel special-offers">
-            <div class="panel-card-content">
-              <h2 class="panel-card-title">Special <span class="highlight">Offers</span></h2>
-              <p class="panel-card-sub">Delicious deals just for you.</p>
-              <a href="#" class="panel-card-link">
-                <div class="arrow-circle">
-                  <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </div>
-              </a>
-            </div>
-          </section>
-          <section class="panel our-menu">
-            <div class="panel-card-content">
-              <h2 class="panel-card-title">Our <span class="highlight">Menu</span></h2>
-              <p class="panel-card-sub">A world of flavors crafted for you.</p>
-              <a href="#" class="panel-card-link">
-                <div class="arrow-circle">
-                  <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </div>
-              </a>
-            </div>
-          </section>
-          <section class="panel reservations">
-            <div class="panel-card-content">
-              <h2 class="panel-card-title">Reservations</h2>
-              <p class="panel-card-sub">Book your table with ease.</p>
-              <a href="#" class="panel-card-link">
-                <div class="arrow-circle">
-                  <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </div>
-              </a>
-            </div>
-          </section>
-          <section class="panel our-ambience">
-            <div class="panel-card-content">
-              <h2 class="panel-card-title">Our <span class="highlight">Ambiance</span></h2>
-              <p class="panel-card-sub">Where every detail sets the mood.</p>
-              <a href="#" class="panel-card-link">
-                <div class="arrow-circle">
-                  <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </div>
-              </a>
-            </div>
-          </section>
-        </div>
+        <section class="panel our-menu">
+          <div class="panel-card-content">
+            <h2 class="panel-card-title">Our <span class="highlight">Menu</span></h2>
+            <p class="panel-card-sub">A world of flavors crafted for you.</p>
+            <a href="#" class="panel-card-link">
+              <div class="arrow-circle">
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section class="panel reservations">
+          <div class="panel-card-content">
+            <h2 class="panel-card-title">Reservations</h2>
+            <p class="panel-card-sub">Book your table with ease.</p>
+            <a href="#" class="panel-card-link">
+              <div class="arrow-circle">
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section class="panel our-ambience">
+          <div class="panel-card-content">
+            <h2 class="panel-card-title">Our <span class="highlight">Ambiance</span></h2>
+            <p class="panel-card-sub">Where every detail sets the mood.</p>
+            <a href="#" class="panel-card-link">
+              <div class="arrow-circle">
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </section>
       </div>
     </div>
+  </div>
 
-    <!-- ************************************************** GSAP HORIZONTAL SLIDER END ************************************************* -->
+  <!-- ************************************************** GSAP HORIZONTAL SLIDER END ************************************************* -->
 
-    <!-- ************************************************** AGENCY GRID ************************************************* -->
+  <!-- ************************************************** AGENCY GRID ************************************************* -->
 
-    <div id="our-work" class="acency-content" loading="lazy" style="display: none;">
-      <!-- <div class="agency-title">
+  <div id="our-work" class="acency-content" loading="lazy" style="display: none;">
+    <!-- <div class="agency-title">
       <h2>Our Work</h2>
     </div> -->
-      <div class="agency-heading">
-        <p class="agency-main-text" style="color: black">Our Works</p>
-        <div class="agency-scrabble">
-          <img src="./assets/text_line_black.png" alt="Scrabble" />
-        </div>
+    <div class="agency-heading">
+      <p class="agency-main-text" style="color: black">Our Works</p>
+      <div class="agency-scrabble">
+        <img src="./assets/text_line_black.png" alt="Scrabble" />
       </div>
-      <div class="agency-grid">
-        <div class="agency-bg">
-          <div class="agency-card">
-            <div class="agency-banner">
-              <img src="./assets/Fist_O_IDC.webp" alt="Locomotive Banner" />
-            </div>
-            <div class="agency-header">
-              <div class="agency-logo">
-                <img src="./assets/restaurant-logo.png" alt="Locomotive" />
-              </div>
-              <div class="agency-title">Our Restaurant</div>
-            </div>
-            <div class="agency-info">
-              <div class="agency-span">Location</div>
-              <div>Ramanathapuram , Coimbatore</div>
-            </div>
-            <a
-              href="https://www.fist-o.com/Fistotech_IDC/index.html"
-              target="_blank"
-              class="view-a"
-            >
-              <button class="slide-glow">view</button>
-            </a>
+    </div>
+    <div class="agency-grid">
+      <div class="agency-bg">
+        <div class="agency-card">
+          <div class="agency-banner">
+            <img src="./assets/Fist_O_IDC.webp" alt="Locomotive Banner" />
           </div>
+          <div class="agency-header">
+            <div class="agency-logo">
+              <img src="./assets/restaurant-logo.png" alt="Locomotive" />
+            </div>
+            <div class="agency-title">Our Restaurant</div>
+          </div>
+          <div class="agency-info">
+            <div class="agency-span">Location</div>
+            <div>Ramanathapuram , Coimbatore</div>
+          </div>
+          <a href="https://www.fist-o.com/Fistotech_IDC/index.html" target="_blank" class="view-a">
+            <button class="slide-glow">view</button>
+          </a>
+        </div>
 
-          <div class="agency-card">
-            <div class="agency-banner">
-              <img
-                src="./assets/Akira_IDC.webp"
-                alt="Immersive Garden Banner"
-              />
-            </div>
-            <div class="agency-header">
-              <div class="agency-logo">
-                <img src="./assets/Akira_logo.png" alt="Immersive Garden" />
-              </div>
-              <div class="agency-title">Akira controls</div>
-            </div>
-            <div class="agency-info">
-              <div class="agency-span">Location</div>
-              <div>Narasimhanaicken palayam,Coimabtore</div>
-            </div>
-            <a
-              href="https://www.akiracontrols.in/DigitalCatalogue/index.html"
-              target="_blank"
-              class="view-a"
-            >
-              <button class="slide-glow">view</button>
-            </a>
+        <div class="agency-card">
+          <div class="agency-banner">
+            <img src="./assets/Akira_IDC.webp" alt="Immersive Garden Banner" />
           </div>
+          <div class="agency-header">
+            <div class="agency-logo">
+              <img src="./assets/Akira_logo.png" alt="Immersive Garden" />
+            </div>
+            <div class="agency-title">Akira controls</div>
+          </div>
+          <div class="agency-info">
+            <div class="agency-span">Location</div>
+            <div>Narasimhanaicken palayam,Coimabtore</div>
+          </div>
+          <a href="https://www.akiracontrols.in/DigitalCatalogue/index.html" target="_blank" class="view-a">
+            <button class="slide-glow">view</button>
+          </a>
+        </div>
 
-          <div class="agency-card">
-            <div class="agency-banner">
-              <img src="./assets/Niagara_IDC.webp" alt="Resn Banner" />
-            </div>
-            <div class="agency-header">
-              <div class="agency-logo">
-                <img src="./assets/Niagara_logo.png" alt="Resn" />
-              </div>
-              <div class="agency-title">Niagara</div>
-            </div>
-            <div class="agency-info">
-              <div class="agency-span">Location</div>
-              <div>Cheran ma Nagar , Coimbatore</div>
-            </div>
-            <a
-              href="https://niagaradigitalcatalogue.s3.ap-south-1.amazonaws.com/index.html"
-              target="_blank"
-              class="view-a"
-            >
-              <button class="slide-glow">view</button>
-            </a>
+        <div class="agency-card">
+          <div class="agency-banner">
+            <img src="./assets/Niagara_IDC.webp" alt="Resn Banner" />
           </div>
+          <div class="agency-header">
+            <div class="agency-logo">
+              <img src="./assets/Niagara_logo.png" alt="Resn" />
+            </div>
+            <div class="agency-title">Niagara</div>
+          </div>
+          <div class="agency-info">
+            <div class="agency-span">Location</div>
+            <div>Cheran ma Nagar , Coimbatore</div>
+          </div>
+          <a href="https://niagaradigitalcatalogue.s3.ap-south-1.amazonaws.com/index.html" target="_blank"
+            class="view-a">
+            <button class="slide-glow">view</button>
+          </a>
+        </div>
 
-          <div class="agency-card">
-            <div class="agency-banner">
-              <img src="./assets/Conway_IDC.webp" alt="Monks Banner" />
-            </div>
-            <div class="agency-header">
-              <div class="agency-logo">
-                <img src="./assets/Conway_logo-white.webp" alt="Monks" />
-              </div>
-              <div class="agency-title">Conway</div>
-            </div>
-            <div class="agency-info">
-              <div class="agency-span">Location</div>
-              <div>KNG Pudur Pirivu , Coimbatore</div>
-            </div>
-            <a
-              href="https://www.conwaywater.com/Bottle_Water_Dispensers_With_UV_Purifier/index.html"
-              target="_blank"
-              class="view-a"
-            >
-              <button class="slide-glow">view</button>
-            </a>
+        <div class="agency-card">
+          <div class="agency-banner">
+            <img src="./assets/Conway_IDC.webp" alt="Monks Banner" />
           </div>
+          <div class="agency-header">
+            <div class="agency-logo">
+              <img src="./assets/Conway_logo-white.webp" alt="Monks" />
+            </div>
+            <div class="agency-title">Conway</div>
+          </div>
+          <div class="agency-info">
+            <div class="agency-span">Location</div>
+            <div>KNG Pudur Pirivu , Coimbatore</div>
+          </div>
+          <a href="https://www.conwaywater.com/Bottle_Water_Dispensers_With_UV_Purifier/index.html" target="_blank"
+            class="view-a">
+            <button class="slide-glow">view</button>
+          </a>
+        </div>
 
-          <div class="agency-card">
-            <div class="agency-banner">
-              <img src="./assets/PopularWater_IDC.webp" alt="Resn Banner" />
-            </div>
-            <div class="agency-header">
-              <div class="agency-logo">
-                <img src="./assets/popular_logo.png" alt="Resn" />
-              </div>
-              <div class="agency-title">Popular water</div>
-            </div>
-            <div class="agency-info">
-              <div class="agency-span">Location</div>
-              <div>Nugambakkam , Chennai</div>
-            </div>
-            <a
-              href="https://www.popularwater.in/DigitalCatalogue/index.html"
-              target="_blank"
-              class="view-a"
-            >
-              <button class="slide-glow">view</button>
-            </a>
+        <div class="agency-card">
+          <div class="agency-banner">
+            <img src="./assets/PopularWater_IDC.webp" alt="Resn Banner" />
           </div>
+          <div class="agency-header">
+            <div class="agency-logo">
+              <img src="./assets/popular_logo.png" alt="Resn" />
+            </div>
+            <div class="agency-title">Popular water</div>
+          </div>
+          <div class="agency-info">
+            <div class="agency-span">Location</div>
+            <div>Nugambakkam , Chennai</div>
+          </div>
+          <a href="https://www.popularwater.in/DigitalCatalogue/index.html" target="_blank" class="view-a">
+            <button class="slide-glow">view</button>
+          </a>
+        </div>
 
-          <div class="agency-card">
-            <div class="agency-banner">
-              <img src="./assets/AirLock_IDC.webp" alt="Resn Banner" />
-            </div>
-            <div class="agency-header">
-              <div class="agency-logo">
-                <img src="./assets/Airlock_Logo.gif" alt="Resn" />
-              </div>
-              <div class="agency-title">Airlock</div>
-            </div>
-            <div class="agency-info">
-              <div class="agency-span">Location</div>
-              <div>Ponnandhampalayam , Thennampalayam</div>
-            </div>
-            <a
-              href="https://fistoar.github.io/AirlockDCSRvalve/"
-              target="_blank"
-              class="view-a"
-            >
-              <button class="slide-glow">view</button>
-            </a>
+        <div class="agency-card">
+          <div class="agency-banner">
+            <img src="./assets/AirLock_IDC.webp" alt="Resn Banner" />
           </div>
+          <div class="agency-header">
+            <div class="agency-logo">
+              <img src="./assets/Airlock_Logo.gif" alt="Resn" />
+            </div>
+            <div class="agency-title">Airlock</div>
+          </div>
+          <div class="agency-info">
+            <div class="agency-span">Location</div>
+            <div>Ponnandhampalayam , Thennampalayam</div>
+          </div>
+          <a href="https://fistoar.github.io/AirlockDCSRvalve/" target="_blank" class="view-a">
+            <button class="slide-glow">view</button>
+          </a>
+        </div>
 
-          <div class="agency-card">
-            <div class="agency-banner">
-              <img src="./assets/TTP_IDC.webp" alt="Resn Banner" />
-            </div>
-            <div class="agency-header">
-              <div class="agency-logo">
-                <img src="./assets/TTP_Logo.png" alt="Resn" />
-              </div>
-              <div class="agency-title">TTP</div>
-            </div>
-            <div class="agency-info">
-              <div class="agency-span">Location</div>
-              <div>Kuniyamuthur, Coimbatore</div>
-            </div>
-            <a
-              href="https://fistoar.github.io/Terratechpacks_IDC/"
-              target="_blank"
-              class="view-a"
-            >
-              <button class="slide-glow">view</button>
-            </a>
+        <div class="agency-card">
+          <div class="agency-banner">
+            <img src="./assets/TTP_IDC.webp" alt="Resn Banner" />
           </div>
+          <div class="agency-header">
+            <div class="agency-logo">
+              <img src="./assets/TTP_Logo.png" alt="Resn" />
+            </div>
+            <div class="agency-title">TTP</div>
+          </div>
+          <div class="agency-info">
+            <div class="agency-span">Location</div>
+            <div>Kuniyamuthur, Coimbatore</div>
+          </div>
+          <a href="https://fistoar.github.io/Terratechpacks_IDC/" target="_blank" class="view-a">
+            <button class="slide-glow">view</button>
+          </a>
+        </div>
 
-          <div class="agency-card">
-            <div class="agency-banner">
-              <img src="./assets/bestomech_IDC.webp" alt="Resn Banner" />
-            </div>
-            <div class="agency-header">
-              <div class="agency-logo">
-                <img src="./assets/bestomech_black_logo.png" alt="Resn" />
-              </div>
-              <div class="agency-title">Bestomech</div>
-            </div>
-            <div class="agency-info">
-              <div class="agency-span">Location</div>
-              <div>Kalapatti , Coimbatore</div>
-            </div>
-            <a
-              href="https://fistoar.github.io/AirlockDCSRvalve/"
-              target="_blank"
-              class="view-a"
-            >
-              <button class="slide-glow">View</button>
-            </a>
+        <div class="agency-card">
+          <div class="agency-banner">
+            <img src="./assets/bestomech_IDC.webp" alt="Resn Banner" />
           </div>
+          <div class="agency-header">
+            <div class="agency-logo">
+              <img src="./assets/bestomech_black_logo.png" alt="Resn" />
+            </div>
+            <div class="agency-title">Bestomech</div>
+          </div>
+          <div class="agency-info">
+            <div class="agency-span">Location</div>
+            <div>Kalapatti , Coimbatore</div>
+          </div>
+          <a href="https://fistoar.github.io/AirlockDCSRvalve/" target="_blank" class="view-a">
+            <button class="slide-glow">View</button>
+          </a>
         </div>
       </div>
     </div>
-    <!-- ************************************************** AGENCY GRID END ************************************************* -->
+  </div>
+  <!-- ************************************************** AGENCY GRID END ************************************************* -->
 
-    <!-- ************************************************** FRAME START ************************************************* -->
+  <!-- ************************************************** FRAME START ************************************************* -->
 
-    <div class="frame-content" loading="lazy" style="display: none;">
-      <div class="frame-img">
-        <img src="./assets/frame-img.webp" alt="" />
-      </div>
-      <div class="frame-btn"><button>Read our Mission</button></div>
+  <div class="frame-content" loading="lazy" style="display: none;">
+    <div class="frame-img">
+      <img src="./assets/frame-img.webp" alt="" />
     </div>
-    <!-- ************************************************** FRAME END ************************************************* -->
+    <div class="frame-btn"><button>Read our Mission</button></div>
+  </div>
+  <!-- ************************************************** FRAME END ************************************************* -->
 
-    <!-- ************************************************** VIDEO FLEX START ************************************************* -->
-    <div class="video-carousel-wrapper" style="display: none;">
-      <div class="heading-container">
-        <div class="heading-main">
-          <p>It's your work,</p>
-          <p>supercharged.</p>
-        </div>
-        <div class="heading-sub">
-          <p>
-            <a
-              href="https://instagram.com/visualelectric/"
-              target="_blank"
-              rel="noopener"
-            >
-            </a>
-          </p>
-        </div>
+  <!-- ************************************************** VIDEO FLEX START ************************************************* -->
+  <div class="video-carousel-wrapper" style="display: none;">
+    <div class="heading-container">
+      <div class="heading-main">
+        <p>It's your work,</p>
+        <p>supercharged.</p>
       </div>
-
-      <div class="video-flex">
-        <div class="video-container">
-          <video
-            src="https://framerusercontent.com/assets/NNlQBiO1jm4b7EhTtkWLlpIZcdc.mp4"
-            preload="metadata"
-            muted
-            loop
-            playsinline
-            class="hover-video"
-          ></video>
-          <button class="play-button" aria-label="Play video">&#9658;</button>
-        </div>
-        <div class="video-container">
-          <video
-            src="https://framerusercontent.com/assets/NNlQBiO1jm4b7EhTtkWLlpIZcdc.mp4"
-            preload="metadata"
-            muted
-            loop
-            playsinline
-            class="hover-video"
-          ></video>
-          <button class="play-button" aria-label="Play video">&#9658;</button>
-        </div>
-        <div class="video-container">
-          <video
-            src="https://framerusercontent.com/assets/1mf7F1FExgjPyn1HKmaWpxlDcc.mp4"
-            preload="metadata"
-            muted
-            loop
-            playsinline
-            class="hover-video"
-          ></video>
-          <button class="play-button" aria-label="Play video">&#9658;</button>
-        </div>
-        <div class="video-container">
-          <video
-            src="https://framerusercontent.com/assets/NNlQBiO1jm4b7EhTtkWLlpIZcdc.mp4"
-            preload="metadata"
-            muted
-            loop
-            playsinline
-            class="hover-video"
-          ></video>
-          <button class="play-button" aria-label="Play video">&#9658;</button>
-        </div>
-        <div class="video-container">
-          <video
-            src="https://framerusercontent.com/assets/NNlQBiO1jm4b7EhTtkWLlpIZcdc.mp4"
-            preload="metadata"
-            muted
-            loop
-            playsinline
-            class="hover-video"
-          ></video>
-          <button class="play-button" aria-label="Play video">&#9658;</button>
-        </div>
-        <div class="video-container">
-          <video
-            src="https://framerusercontent.com/assets/1mf7F1FExgjPyn1HKmaWpxlDcc.mp4"
-            preload="metadata"
-            muted
-            loop
-            playsinline
-            class="hover-video"
-          ></video>
-          <button class="play-button" aria-label="Play video">&#9658;</button>
-        </div>
-      </div>
-      <div class="scroll-buttons">
-        <button id="scrollLeft" aria-label="Scroll left">
-          <i class="fa-notdog-duo fa-solid fa-angle-left"></i>
-        </button>
-        <button id="scrollRight" aria-label="Scroll right">
-          <i class="fa-notdog-duo fa-solid fa-angle-right"></i>
-        </button>
+      <div class="heading-sub">
+        <p>
+          <a href="https://instagram.com/visualelectric/" target="_blank" rel="noopener">
+          </a>
+        </p>
       </div>
     </div>
 
-    <!-- ************************************************** VIDEO FLEX END ************************************************* -->
+    <div class="video-flex">
+      <div class="video-container">
+        <video src="https://framerusercontent.com/assets/NNlQBiO1jm4b7EhTtkWLlpIZcdc.mp4" preload="metadata" muted loop
+          playsinline class="hover-video"></video>
+        <button class="play-button" aria-label="Play video">&#9658;</button>
+      </div>
+      <div class="video-container">
+        <video src="https://framerusercontent.com/assets/NNlQBiO1jm4b7EhTtkWLlpIZcdc.mp4" preload="metadata" muted loop
+          playsinline class="hover-video"></video>
+        <button class="play-button" aria-label="Play video">&#9658;</button>
+      </div>
+      <div class="video-container">
+        <video src="https://framerusercontent.com/assets/1mf7F1FExgjPyn1HKmaWpxlDcc.mp4" preload="metadata" muted loop
+          playsinline class="hover-video"></video>
+        <button class="play-button" aria-label="Play video">&#9658;</button>
+      </div>
+      <div class="video-container">
+        <video src="https://framerusercontent.com/assets/NNlQBiO1jm4b7EhTtkWLlpIZcdc.mp4" preload="metadata" muted loop
+          playsinline class="hover-video"></video>
+        <button class="play-button" aria-label="Play video">&#9658;</button>
+      </div>
+      <div class="video-container">
+        <video src="https://framerusercontent.com/assets/NNlQBiO1jm4b7EhTtkWLlpIZcdc.mp4" preload="metadata" muted loop
+          playsinline class="hover-video"></video>
+        <button class="play-button" aria-label="Play video">&#9658;</button>
+      </div>
+      <div class="video-container">
+        <video src="https://framerusercontent.com/assets/1mf7F1FExgjPyn1HKmaWpxlDcc.mp4" preload="metadata" muted loop
+          playsinline class="hover-video"></video>
+        <button class="play-button" aria-label="Play video">&#9658;</button>
+      </div>
+    </div>
+    <div class="scroll-buttons">
+      <button id="scrollLeft" aria-label="Scroll left">
+        <i class="fa-notdog-duo fa-solid fa-angle-left"></i>
+      </button>
+      <button id="scrollRight" aria-label="Scroll right">
+        <i class="fa-notdog-duo fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+  </div>
 
-    <!-- ************************************************** PAPPERS START ************************************************* -->
-    <section id="testimonials" class="pappers-content" loading="lazy">
+  <!-- ************************************************** VIDEO FLEX END ************************************************* -->
+
+  <!-- ************************************************** PAPPERS START ************************************************* -->
+  <section id="testimonials" class="pappers-content" loading="lazy">
     <!-- Heading -->
     <div class="pappers-heading">
       <p class="main-text">What Our Customers Say...</p>
@@ -668,12 +502,7 @@
       <!-- Green Testimonial -->
       <div class="testimonial-green-papper">
         <div class="image-wrapper">
-          <img
-            src="./assets/green-papper.webp"
-            alt="Main"
-            class="main-img"
-            id="green-papper-img"
-          />
+          <img src="./assets/green-papper.webp" alt="Main" class="main-img" id="green-papper-img" />
         </div>
         <div class="green-text">
           <p class="green-quote">
@@ -684,9 +513,7 @@
           <div class="green-author">
             <img
               src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23666666'><path d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/></svg>"
-              alt="Author"
-              class="author-img"
-            />
+              alt="Author" class="author-img" />
             <div class="green-author-info">
               <p class="name">Aarav Sharma</p>
               <p class="role">Food Blogger</p>
@@ -698,12 +525,7 @@
       <!-- Pink Testimonial -->
       <div class="testimonial-pink-papper">
         <div class="image-wrapper">
-          <img
-            src="./assets/pink-papper.webp"
-            alt="Main"
-            class="main-img"
-            id="pink-papper-img"
-          />
+          <img src="./assets/pink-papper.webp" alt="Main" class="main-img" id="pink-papper-img" />
         </div>
         <div class="pink-text">
           <p class="pink-quote">
@@ -714,9 +536,7 @@
           <div class="pink-author">
             <img
               src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23666666'><path d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/></svg>"
-              alt="Author"
-              class="author-img"
-            />
+              alt="Author" class="author-img" />
             <div class="pink-author-info">
               <p class="name">Priya Nair</p>
               <p class="role">Regular Customer</p>
@@ -728,12 +548,7 @@
       <!-- Green Box Testimonial -->
       <div class="testimonial-greenbox-papper">
         <div class="image-wrapper">
-          <img
-            src="./assets/greenbox.webp"
-            alt="Main"
-            class="main-img"
-            id="greenbox-papper-img"
-          />
+          <img src="./assets/greenbox.webp" alt="Main" class="main-img" id="greenbox-papper-img" />
         </div>
         <div class="greenbox-text">
           <p class="greenbox-quote">
@@ -743,9 +558,7 @@
           <div class="greenbox-author">
             <img
               src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23666666'><path d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/></svg>"
-              alt="Author"
-              class="author-img"
-            />
+              alt="Author" class="author-img" />
             <div class="greenbox-author-info">
               <p class="name">Rahul Menon</p>
               <p class="role">Corporate Customer</p>
@@ -757,12 +570,7 @@
       <!-- Purple Testimonial -->
       <div class="testimonial-purple-papper">
         <div class="image-wrapper">
-          <img
-            src="./assets/purple-papper.webp"
-            alt="Main"
-            class="main-img"
-            id="purple-papper-img"
-          />
+          <img src="./assets/purple-papper.webp" alt="Main" class="main-img" id="purple-papper-img" />
         </div>
         <div class="purple-text">
           <p class="purple-quote">
@@ -773,9 +581,7 @@
           <div class="purple-author">
             <img
               src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23666666'><path d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/></svg>"
-              alt="Author"
-              class="author-img"
-            />
+              alt="Author" class="author-img" />
             <div class="purple-author-info">
               <p class="name">Sneha Kapoor</p>
               <p class="role">Food Enthusiast</p>
@@ -787,12 +593,7 @@
       <!-- Yellow Testimonial -->
       <div class="testimonial-yellow-papper">
         <div class="image-wrapper">
-          <img
-            src="./assets/yellow-papper.webp"
-            alt="Main"
-            class="main-img"
-            id="yellow-papper-img"
-          />
+          <img src="./assets/yellow-papper.webp" alt="Main" class="main-img" id="yellow-papper-img" />
         </div>
         <div class="yellow-text">
           <p class="yellow-quote">
@@ -803,9 +604,7 @@
           <div class="yellow-author">
             <img
               src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23666666'><path d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/></svg>"
-              alt="Author"
-              class="author-img"
-            />
+              alt="Author" class="author-img" />
             <div class="yellow-author-info">
               <p class="name">Meera Joshi</p>
               <p class="role">Local Guide</p>
@@ -816,23 +615,96 @@
 
     </div>
   </section>
-    <!-- ************************************************** PAPPERS END ************************************************* -->
+  <!-- ************************************************** PAPPERS END ************************************************* -->
 
-    <!-- ************************************************** ROTATING GALLERY START ************************************************* -->
-    <!-- <div class="fade"></div> -->
+  <!-- ************************************************** RESERVATIONS FORM START ************************************************* -->
+<section id="reservations" class="reservations-section" loading="lazy">
+  <div class="reservations-wrapper">
+    <div class="reservations-content">
+      <div class="reservations-text">
+        <h2 class="reservations-title">Reserve Your Table</h2>
+        <p class="reservations-subtitle">Experience fine dining at its best</p>
+        <div class="accent-line"></div>
+      </div>
 
-    <div class="rotating-container" loading="lazy">
-      <div class="circle-wrapper-heading">
-        <div class="circle-logo">
-          <img src="./assets/images/logo-white.webp" alt="" />
+      <form class="reservation-form" id="reservationForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX">
+          </div>
         </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time" required>
+          </div>
+
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <select id="guests" name="guests" required>
+              <option value="">Select guests</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+              <option value="6">6 Guests</option>
+              <option value="7+">7+ Guests</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="message">Special Requests</label>
+          <textarea id="message" name="message" placeholder="Any dietary restrictions, celebration notes, or preferences..."></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-reserve">Reserve Table</button>
+          <p class="form-note">We'll confirm your reservation within 2 hours</p>
+        </div>
+      </form>
+    </div>
+
+    <div class="reservations-image">
+      <img src="./assets/images/hero-image.webp" alt="Restaurant Interior" />
+    </div>
+  </div>
+</section>
+<!-- ************************************************** RESERVATIONS FORM END ************************************************* -->
+  
+  <!-- ************************************************** ROTATING GALLERY START ************************************************* -->
+  <!-- <div class="fade"></div> -->
+
+  <div id="new-gallery" class="rotating-container" loading="lazy">
+    <div class="circle-wrapper-heading">
+      <div class="circle-logo">
+        <img src="./assets/images/logo-white.webp" alt="" />
+      </div>
       <div class="circle-title">
         Ready to satisfy <br />
         your cravings?
       </div>
-        <div class="circle-btn"><button>Get Started</button></div>
-      </div>
-      <div class="circle-wrapper">
+      <div class="circle-btn"><button>Get Started</button></div>
+    </div>
+    <div class="circle-wrapper">
       <div class="circle" style="--itemCount: 20">
         <div class="item" style="--item: 1">
           <div class="title">BBQ</div>
@@ -935,129 +807,143 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- ************************************************** ROTATING GALLERY END ************************************************* -->
+
+  <!-- ************************************************** FOOTER START ************************************************* -->
+  <footer class="footer" loading="lazy">
+    <div class="footer-top">
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#stay">Our Menu</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#new-gallery">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Visit Us</h3>
+        <ul>
+          <li><a href="#reservations">Reservations</a></li>
+          <li><a href="#reservations">Contact Us</a></li>
+          <li><a href="#reservations">Location</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#" target="_blank">Facebook</a></li>
+          <li><a href="#" target="_blank">Instagram</a></li>
+          <li><a href="#" target="_blank">YouTube</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Copyright</a></li>
+        </ul>
+      </div>
     </div>
 
-    <!-- ************************************************** ROTATING GALLERY END ************************************************* -->
 
-    <!-- ************************************************** FOOTER START ************************************************* -->
-    <footer class="footer" loading="lazy">
-      <div class="footer-top">
-        <div class="footer-column">
-          <h3>Company</h3>
-          <ul>
-            <li><a href="#">Mission</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Enterprise</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h3>Product</h3>
-          <ul>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Learn</a></li>
-            <li><a href="#">What's New</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h3>Plugins</h3>
-          <ul>
-            <li><a href="#">Framer</a></li>
-            <li><a href="#">Webflow</a></li>
-            <li><a href="#">Figma</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h3>Legal</h3>
-          <ul>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Copyright</a></li>
-          </ul>
-        </div>
+    <div class="logo-section-footer">
+      <div class="logo-icon-footer">
+        <a href="./index.html">
+          <img src="./assets/images/logo-white.webp" alt="" class="logo-icon-footer" />
+        </a>
+      </div>
+      <!-- <div class="logo-text">Our Restaurant Website</div> -->
+    </div>
+    <div class="copyright">
+      <div class="designed-by">
+        Designed By
+        <a href="https://fistoar.github.io/Profilenew/Homepage/index.html" target="_blank" class="privacy-policy">
+          Fist O AR
+        </a>
       </div>
 
-      <!-- <div class="social-links">
-            <!-- X (Twitter) Icon 
-            <a href="#" aria-label="X">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="white"/>
-                </svg>
-            </a>
+      <div class="copy-m">Copyright © 2026. All Rights Reserved.</div>
+    </div>
+  </footer>
 
-            <!-- Instagram Icon 
-            <a href="#" aria-label="Instagram">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" fill="white"/>
-                </svg>
-            </a>
+  <!-- ************************************************** FOOTER END ************************************************* -->
 
-            <!-- Threads Icon 
-            <a href="#" aria-label="Threads">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.5 12.068c0-3.629.885-6.531 2.63-8.623C5.976 1.194 8.813.002 12.19.002c3.338 0 6.13 1.175 7.958 3.365 1.89 2.264 2.352 5.37 2.352 8.72 0 2.97-.414 5.642-1.236 7.952-.805 2.263-2.04 3.96-3.59 4.932a8.834 8.834 0 01-5.488 1.029 1.004 1.004 0 11.38-1.968c1.857.346 3.82-.168 5.383-1.407 1.358-.911 2.383-2.172 3.05-3.75.693-1.64 1.044-3.579 1.044-5.763 0-3.053-.393-5.654-1.955-7.473C18.64 3.97 16.277 3 13.19 3 10.077 3 7.773 3.87 6.315 5.645 4.79 7.502 4.004 10.02 4.004 12.892c0 3.173.726 5.644 2.058 7.292 1.353 1.676 3.399 2.542 6.124 2.564h.007c2.247.021 4.105-.716 5.479-2.178.871-.928 1.444-2.117 1.677-3.461.06-.351.092-.713.092-1.082 0-1.867-.706-3.426-1.983-4.39-.963-.725-2.251-1.11-3.702-.93-1.482.183-2.683.84-3.473 1.899-.667.897-1.035 2.106-1.035 3.405 0 2.503 1.268 4.14 3.226 4.168 1.163.017 2.125-.49 2.781-1.467.498-.743.702-1.676.498-2.332a1.002 1.002 0 011.934-.521c.405 1.507-.062 3.295-.953 4.624-.903 1.346-2.363 2.077-3.98 2.077h-.117c-3.174-.042-5.225-2.341-5.225-5.855 0-1.733.523-3.396 1.475-4.687C8.873 9.022 10.527 8.206 12.405 8.002c1.873-.204 3.634.27 4.966 1.333 1.653 1.319 2.568 3.413 2.568 5.884 0 .463-.042.92-.124 1.362-.307 1.648-1.031 3.24-2.123 4.403-1.656 1.766-4.031 2.73-6.51 2.709z" fill="white"/>
-                </svg>
-            </a>
+  <!-- ************************************************** BACK TO TOP BUTTON START ************************************************* -->
 
-            <!-- Discord Icon 
-            <a href="#" aria-label="Discord">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.369-.444.85-.608 1.23a18.566 18.566 0 0 0-5.487 0 12.36 12.36 0 0 0-.617-1.23A.077.077 0 0 0 8.562 3c-1.714.29-3.354.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 0 0 .031.055 20.03 20.03 0 0 0 5.993 2.98.078.078 0 0 0 .084-.026c.462-.62.874-1.275 1.226-1.963.021-.04.001-.088-.041-.104a13.201 13.201 0 0 1-1.872-.878.075.075 0 0 1-.008-.125c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.764 8.18 1.764 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.075.075 0 0 1-.006.125c-.598.344-1.22.635-1.873.877a.075.075 0 0 0-.041.105c.36.687.772 1.341 1.225 1.962a.077.077 0 0 0 .084.028 19.963 19.963 0 0 0 6.002-2.981.076.076 0 0 0 .032-.054c.5-5.094-.838-9.52-3.549-13.442a.06.06 0 0 0-.031-.028zM8.02 15.278c-1.182 0-2.157-1.069-2.157-2.38 0-1.312.956-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.956 2.38-2.157 2.38zm7.975 0c-1.183 0-2.157-1.069-2.157-2.38 0-1.312.955-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.946 2.38-2.157 2.38z" fill="white"/>
-                </svg>
-            </a>
+  <button id="backToTop" title="Back to Top">
+    <i class="fa-notdog-duo fa-solid fa-angle-up"></i>
+  </button>
 
-            <!-- YouTube Icon 
-            <a href="#" aria-label="YouTube">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill="white"/>
-                </svg>
-            </a>
-        </div> -->
+  <!-- ************************************************** BACK TO TOP BUTTON END ************************************************* -->
 
-      <div class="logo-section-footer">
-        <div class="logo-icon-footer">
-          <a href="./index.html">
-            <img
-              src="./assets/images/logo-white.webp"
-              alt=""
-              class="logo-icon-footer"
-            />
-          </a>
+  <!-- ******************************************************* SCRIPT*********************************************** -->
+  <script src="./JS/navbar.js"></script>
+  <script src="./JS/creative.js"></script>
+  <script src="./JS/productScroll.js"></script>
+  <script src="./JS/videoGrid.js"></script>
+  <script src="./JS/rotating.js"></script>
+  <script src="./JS/footer.js"></script>
+  <script src="./JS/agency.js"></script>
+  <script src="./script.js"></script>
+  <script>
+    // Reservation Form Handler
+document.addEventListener('DOMContentLoaded', function() {
+  const reservationForm = document.getElementById('reservationForm');
+  
+  if (reservationForm) {
+    reservationForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        date: document.getElementById('date').value,
+        time: document.getElementById('time').value,
+        guests: document.getElementById('guests').value,
+        message: document.getElementById('message').value
+      };
+      
+      // Store in localStorage (optional - for your admin panel later)
+      let reservations = JSON.parse(localStorage.getItem('reservations')) || [];
+      reservations.push({
+        ...formData,
+        timestamp: new Date().toISOString()
+      });
+      localStorage.setItem('reservations', JSON.stringify(reservations));
+      
+      // Show success message
+      const successMsg = document.createElement('div');
+      successMsg.className = 'success-message';
+      successMsg.innerHTML = `
+        <div class="success-content">
+          <h3>✓ Reservation Confirmed!</h3>
+          <p>We've received your reservation request for <strong>${formData.date} at ${formData.time}</strong>.</p>
+          <p>A confirmation email will be sent to <strong>${formData.email}</strong> shortly.</p>
         </div>
-        <!-- <div class="logo-text">Our Restaurant Website</div> -->
-      </div>
-      <div class="copyright">
-        <div class="designed-by">
-          Designed By
-          <a href="./index.html" class="privacy-policy">
-            Our Restaurant
-          </a>
-        </div>
+      `;
+      
+      reservationForm.parentElement.appendChild(successMsg);
+      
+      // Reset form
+      reservationForm.reset();
+      
+      // Remove success message after 5 seconds
+      setTimeout(() => {
+        successMsg.remove();
+      }, 5000);
+    });
+  }
+});
+  </script>
+</body>
 
-        <div class="copy-m">Copyright © 2026. All Rights Reserved.</div>
-      </div>
-    </footer>
-
-    <!-- ************************************************** FOOTER END ************************************************* -->
-
-    <!-- ************************************************** BACK TO TOP BUTTON START ************************************************* -->
-
-    <button id="backToTop" title="Back to Top">
-      <i class="fa-notdog-duo fa-solid fa-angle-up"></i>
-    </button>
-
-    <!-- ************************************************** BACK TO TOP BUTTON END ************************************************* -->
-
-    <!-- ******************************************************* SCRIPT*********************************************** -->
-    <script src="./JS/navbar.js"></script>
-    <script src="./JS/creative.js"></script>
-    <script src="./JS/productScroll.js"></script>
-    <script src="./JS/videoGrid.js"></script>
-    <script src="./JS/rotating.js"></script>
-    <script src="./JS/footer.js"></script>
-    <script src="./JS/agency.js"></script>
-    <script src="./script.js"></script>
-  </body>
 </html>
